@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Roboto+Mono&display=swap');
+
+:root{
+
+  --primary-color: #01131E;
+  --primary-lighter: #011C2C;
+  --secondary-color: #FD6259;
+  --start-button: #03AE85;
+  --border-color: #DBDBDB;
+  --text-color: #FFFFFF;
+
+}
+
+
+*{
+  font-family: 'Roboto Mono', monospace;
+  padding: 0;
+  margin:0;
+  list-style: none;
+}
+
+
+body{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
+
+}
+
+
+
+.timer__container{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+margin: 2% 15% 6% 15% ;
+padding:1% 0 10% 0 ;
+border-radius: 2%;
+
+background-color: var(--primary-lighter);
+
+
+}
+.timer__container h1{
+  font-size: 2.3rem;
+  padding: 3%;
+  justify-content: flex-start;
+
+
+}
+.timer__display{
+
+  font-size: 3rem;
+  padding: 3%;
+  border: 1px solid;
+  border-color: var(--border-color);
+  border-radius: 2%;
+}
+
+
+.button__container{
+  width: 50%;
+  height: auto;
+  margin:10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  
+
+}
+
+.timer__button{
+  padding: 2% 5% 2% 5%;
+  font-size: 1rem;
+  background-color: #011C2C;
+  font-weight: 200;
+  color: var(--text-color);
+  border: 1px solid;
+  border-radius: 10%;
+  border-color: var(--border-color);
+  cursor: pointer;
+}
+
+#start{
+  background-color: var(--start-button);
+}
+#reset{
+  background-color: var(--secondary-color);
+}
+
+
+
+.preset__list{
+  display: flex;
+  list-style: none;
+  white-space: nowrap;
+  gap: 5%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.preset__list li{
+  
+  padding: 5%;
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--text-color);
+  border: 1px solid;
+  border-radius: 10%;
+  border-color: var(--border-color);
+}
+
+
+
+.options{
+  display: flex;
+
+  margin: 1rem;
+  padding: 0 2rem 2rem 2rem;
+  text-align: center;
+  justify-content: center;
+  gap: 5%;
+  
+
+}
+
+.options div{
+  height: 60%;
+  width: 32%;
+  display: flex;
+  background-color: var(--primary-lighter);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid var(--secondary-color);
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+
+.input{
+
+  background-color: var(--primary-lighter);
+  border: 2px solid;
+  border-color: var(--border-color);
+  color: var(--text-color);
+  text-align: center;
+  margin: 3%;
+
+}
+
+.task ul{
+  padding-right: 5%;
+}
+.task li{
+  padding: 15%;
+  gap: 15%;
+}

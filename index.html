@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listimer</title>
+  <link href="styles/style.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+  
+  <header>
+    
+
+  </header>
+
+  <main>
+    <section class="timer__container">
+      <h1>Listimer</h1>
+      <div class="timer__display"><strong>00:00:00</strong></div>
+      <div class="button__container">
+        <button class="timer__button" id="start">Start</button>
+        <button class="timer__button" id="stop">Stop</button>
+        <button class="timer__button" id="reset">Reset</button>
+      </div>
+      <ul class="preset__list">
+
+        <li>Pomodoro</li>
+        <li>Quick-pause</li>
+        <li>Long-Pause</li>
+        
+      </ul>
+
+    </section>
+
+    <section class="options">
+      <div class="input__list">
+          <h2>Create a preset</h2>
+          <label for="name">Preset name: </label>
+          <input class="input" classtype="text" id="name" value="Name">
+
+          <label for="hours">Hours:</label>
+          <input class="input" type="number" id="hours" value="0">
+
+          <label for="minutes">Minutes:</label>
+          <input class="input" type="number" id="minutes" value="0">
+
+          <label for="seconds">Seconds:</label>
+          <input class="input" type="number" id="seconds" value="0">
+      </div>
+      <div class="task">
+        <h2>Add a task</h2>
+        <input class="input" type="text" id="task" value="New Task">
+        <ul>
+          <li>Teste</li>
+          <li>TESTE</li>
+
+        </ul>
+
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
