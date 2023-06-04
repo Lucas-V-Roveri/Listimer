@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Listimer</title>
   <link href="styles/style.css" rel="stylesheet">
+  <link rel="icon" href="assets/ListimerIcon.png">
+  
 
 </head>
 
 
 
 <body>
+
   
   <header>
     
@@ -21,7 +24,7 @@
   <main>
     <section class="timer__container">
       <h1>Listimer</h1>
-      <div class="timer__display"><strong>00:00:00</strong></div>
+      <div class="timer__display">00:00</div>
       <div class="button__container">
         <button class="timer__button" id="start">Start</button>
         <button class="timer__button" id="stop">Stop</button>
@@ -29,9 +32,9 @@
       </div>
       <ul class="preset__list">
 
-        <li>Pomodoro</li>
-        <li>Quick-pause</li>
-        <li>Long-Pause</li>
+        <li class="preset" value="25">Pomodoro</li>
+        <li class="preset" value="5">Quick-pause</li>
+        <li class="preset" value="10">Long-Pause</li>
         
       </ul>
 
@@ -43,21 +46,23 @@
           <label for="name">Preset name: </label>
           <input class="input" classtype="text" id="name" value="Name">
 
-          <label for="hours">Hours:</label>
-          <input class="input" type="number" id="hours" value="0">
-
           <label for="minutes">Minutes:</label>
           <input class="input" type="number" id="minutes" value="0">
 
           <label for="seconds">Seconds:</label>
           <input class="input" type="number" id="seconds" value="0">
+
+          <button class="button" id="submit-preset">Submit</button>
+
       </div>
       <div class="task">
         <h2>Add a task</h2>
-        <input class="input" type="text" id="task" value="New Task">
-        <ul>
-          <li>Teste</li>
-          <li>TESTE</li>
+        <form class="addForm">
+          <input class="input" type="text" id="task" value="New Task">
+          <input class="button" type="submit" id="submit-task" value="Submit">
+        </form>
+        <ul id="task-list">
+
 
         </ul>
 
@@ -74,7 +79,7 @@
 
 
 
-
   <script src="js/main.js"></script>
+  <script src="js/tasklist.js"></script>
 </body>
 </html>
